@@ -253,6 +253,150 @@ header .sidebar .bottom-sidebar h1 {
   cursor: pointer;
 }
 
+.selectItem {
+  font-size: 1.3rem !important;
+  padding: 0;
+}
+
+#demo-simple-select-label {
+  top: -7px;
+}
+
+#demo-simple-select {
+  padding: 1rem !important;
+}
+
+.dayFilter2 {
+  margin: 3rem 3rem;
+  background-color: #fff;
+  height: 300px;
+  display: flex;
+}
+.dayFilter2 .d1 {
+  width: 60%;
+  height: 100%;
+  display: grid;
+  margin-right: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1.5rem 1.5rem;
+}
+.dayFilter2 .d1 .box {
+  height: 100%;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  border-radius: 0.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.dayFilter2 .d1 .box h1 {
+  font-size: 2rem;
+}
+.dayFilter2 .d1 .box p {
+  font-size: 1.4rem;
+  color: #F76767;
+  display: flex;
+  align-items: center;
+  font-weight: bolder;
+}
+.dayFilter2 .d1 .box p span {
+  display: flex;
+  align-items: center;
+}
+.dayFilter2 .d1 .box p img {
+  width: 30px;
+  height: auto;
+}
+.dayFilter2 .d2 {
+  width: 40%;
+  margin-left: 1rem;
+  height: 100%;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  background-color: #fff;
+  padding: 1.5rem;
+}
+.dayFilter2 .d2 h1 {
+  margin-bottom: 2.2rem;
+}
+.dayFilter2 .d2 .d2Info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+.dayFilter2 .d2 .d2Info p {
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-align: right;
+}
+.dayFilter2 .d2 .d2Info .div1 {
+  width: 75px;
+  height: 20px;
+  border-radius: 0.7rem;
+  padding: 1rem;
+  background-color: #5A45FE;
+}
+.dayFilter2 .d2 .d2Info .div2 {
+  width: 175px;
+  height: 20px;
+  padding: 1rem;
+  border-radius: 0.7rem;
+  background-color: #5A45FE;
+}
+.dayFilter2 .d2 .d2Info .div3 {
+  width: 115px;
+  height: 20px;
+  padding: 1rem;
+  border-radius: 0.7rem;
+  background-color: #5A45FE;
+}
+.dayFilter2 .d2 .d2Info .div4 {
+  width: 165px;
+  height: 20px;
+  padding: 1rem;
+  border-radius: 0.7rem;
+  background-color: #5A45FE;
+}
+.dayFilter2 .d2 .d2Info .div5 {
+  width: 85px;
+  height: 20px;
+  padding: 1rem;
+  border-radius: 0.7rem;
+  background-color: #5A45FE;
+}
+
+.dayFilter {
+  margin: 1rem 3rem;
+  background-color: #fff;
+  border-radius: 0.7rem;
+  height: 50px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  gap: 3rem;
+}
+.dayFilter input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 1.4rem;
+}
+.dayFilter p {
+  color: #000;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.dayFilter p span {
+  color: #5A45FE;
+  font-size: 2rem;
+}
+.dayFilter p .spanL {
+  color: #F76767;
+}
+
 .loginContainer {
   width: 100%;
   justify-content: center;
@@ -279,4 +423,44 @@ header .sidebar .bottom-sidebar h1 {
 .loginContainer .loginBox p span {
   text-transform: uppercase;
   font-size: 1.2rem;
+}
+
+@media (max-width: 1132px) {
+  .dayFilter2 .d1 .box h1 {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 1080px) {
+  .dayFilter2 {
+    flex-direction: column;
+    width: 100%;
+    gap: 3rem;
+  }
+  .dayFilter2 .d1, .dayFilter2 .d2 {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .dayFilter {
+    flex-direction: column;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 3rem;
+  }
+  .dayFilter2 {
+    margin-left: 0;
+  }
+  .inputF {
+    padding: 1rem !important;
+  }
+  .dayFilter2 .d1 {
+    height: 100%;
+    padding: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 450px) {
+  .home .main-content .topNav .left-content h1 {
+    font-size: 1.5rem;
+  }
 }/*# sourceMappingURL=App.css.map */

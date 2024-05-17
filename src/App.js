@@ -1,5 +1,5 @@
 import './App.css';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Navbar from './components/Navbar';
 import Login from './components/Login';
 import Signup from './components/Signup';
@@ -9,9 +9,9 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { GoogleOAuthProvider } from '@react-oauth/google';
 import LoadingBar from 'react-top-loading-bar'
 import { useSelector } from 'react-redux';
-import CreateAppointment from './components/CreateAppointment';
-import CreatePatient from './components/CreatePatient';
-import PatientList from './components/PatientList';
+import Setting from './components/Setting';
+import Report from './components/Report';
+import Connect from './components/Connect';
 
 
 
@@ -38,9 +38,9 @@ const App = () => {
             <Route path="/login" element={<Login setProgress={setProgress} />} />
             <Route path="/signup" element={<Signup setProgress={setProgress} />} />
             <Route path="/profile" element={<Profile setProgress={setProgress} />} />
-            <Route path="/createappoinment" element={<CreateAppointment setProgress={setProgress} />} />
-            <Route path="/createpatient" element={<CreatePatient setProgress={setProgress} />} />
-            <Route path="/patientlist" element={<PatientList setProgress={setProgress} />} />
+            <Route path="/connect" element={<Connect setProgress={setProgress}   />} />
+            <Route path="/report" element={<Report setProgress={setProgress}  />} />
+            <Route path="/settings" element={<Setting setProgress={setProgress} />} />
           </Routes>
 
         </BrowserRouter>
