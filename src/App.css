@@ -458,6 +458,10 @@ header .sidebar .bottom-sidebar h1 {
     padding: 1rem;
     grid-template-columns: repeat(2, 1fr);
   }
+  .loginContainer {
+    width: 60%;
+    margin-left: 25rem;
+  }
 }
 @media (max-width: 450px) {
   .home .main-content .topNav .left-content h1 {
